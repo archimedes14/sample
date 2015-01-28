@@ -1,0 +1,17 @@
+doctype html
+html(ng-app="msgr")
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap-theme.min.css')
+  body(ui-view)
+    include header
+    block content
+    script(src='/javascripts/jquery.min.js')
+    script(src='/javascripts/bootstrap.min.js')
+    script(src='/javascripts/angular.min.js')
+    script(src='/javascripts/angular-ui-router.min.js')
+    script(src='/javascripts/app.js')
+
+      
